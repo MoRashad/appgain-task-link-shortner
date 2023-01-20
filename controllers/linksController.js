@@ -30,7 +30,6 @@ export const getLinks = async (req, res) => {
         ...links,
         {
           shortLink: doc.data().shortLink,
-          originalUrl: doc.data().web,
           destinationUrl: destinationUrl,
           fallbackUrl: fallbackUrl,
         },
